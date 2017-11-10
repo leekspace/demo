@@ -1,0 +1,17 @@
+/*.project
+/.settings
+/demo-assembly/*.classpath
+/demo-assembly/*.project
+/demo-assembly/.settings/org.eclipse.core.resources.prefs
+/demo-assembly/.settings/org.eclipse.jdt.core.prefs
+/demo-assembly/.settings/org.eclipse.m2e.core.prefs
+/demo-aws/*.classpath
+/demo-aws/*.project
+/demo-aws/.settings/*.prefs
+/demo-dp/*.classpath
+/demo-dp/*.project
+/demo-dp/.settings/*.prefs
+*.classpath
+*.project
+*.prefs
+*.mvn
