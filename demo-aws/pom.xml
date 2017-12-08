@@ -16,6 +16,23 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
   <dependencies>
+  
+  		<!-- aws -->
+
+		<dependency>
+			<groupId>com.amazonaws</groupId>
+			<artifactId>amazon-sqs-java-messaging-lib</artifactId>
+			<version>1.0.4</version>
+		</dependency>
+
+		<dependency>
+			<groupId>com.amazonaws</groupId>
+			<artifactId>aws-java-sdk-sqs</artifactId>
+			<version>1.11.220</version>
+		</dependency>
+  
+  
+  
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
