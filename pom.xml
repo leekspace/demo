@@ -12,7 +12,7 @@
 		<module>demo-netty</module>
 		<module>demo-jffi</module>
 		<module>demo-assembly</module>
-    <module>demo-spring</module>
+        <module>demo-spring</module>
   </modules>
 
 

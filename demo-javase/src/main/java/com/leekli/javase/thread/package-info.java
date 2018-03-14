@@ -5,4 +5,4 @@
  * @author media-liwei
  *
  */
-package com.leekli.javase;
+package com.leekli.javase.thread;

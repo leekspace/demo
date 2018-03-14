@@ -2,6 +2,7 @@ package com.leekli.javase.calendar;
 
 import java.sql.Timestamp;
 import java.util.Calendar;
+import java.util.Date;
 import java.util.TimeZone;
 
 import org.apache.commons.lang.time.DateFormatUtils;
@@ -13,10 +14,22 @@ import org.apache.commons.lang.time.DateFormatUtils;
  *
  */
 public class CalendarDemo {
-
-    public static void main(String[] args) {
-    	
-    	//全球绝对时间
+    
+    public static long getExpiredTime(int fileExpiresHours){
+        Calendar calendar;
+        try {
+            calendar = Calendar.getInstance();
+            calendar.add(Calendar.HOUR, fileExpiresHours + 1);
+            calendar.set(Calendar.MINUTE, 0);
+            calendar.set(Calendar.SECOND, 0);
+            calendar.set(Calendar.MILLISECOND, 000);
+            return calendar.getTimeInMillis();
+        } catch (Exception e) {
+            return 0;
+        }
+    }
+    private static void test() {
+        //全球绝对时间
     	long time = System.currentTimeMillis();
     	long time2 = Calendar.getInstance().getTimeInMillis();
     	long time3 = Calendar.getInstance(TimeZone.getTimeZone("Asia/Shanghai")).getTimeInMillis();
